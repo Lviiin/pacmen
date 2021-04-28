@@ -1,6 +1,6 @@
 # pacmen
  
-<img src="https://github.com/Lviiin/lviiin.github.io/tree/main/assets/img/pacman.jpg" width="300" />
+<img src="pacman.jpg" width="300" />
 This project was assigned via MIT xPROs Full Stack Developer Professional Certification. This app constantly generates pacman graphics and animates them across the browser after button click. The more you click "Start Game" the faster the pacmen move!
 
 Viewing This Project

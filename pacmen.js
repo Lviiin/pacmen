@@ -24,7 +24,7 @@ function makePac() {
   let game = document.getElementById('game');
   let newimg = document.createElement('img');
   newimg.style.position = 'absolute';
-  newimg.src = 'PacMan1.png';
+  newimg.src = './images/PacMan1.png';
   newimg.width = 100;
 
   // TODO: set position here
@@ -57,10 +57,13 @@ function update() {
 function checkCollisions(item) {
   // TODO: detect collision with all walls and make pacman bounce
   if (item.position.x + item.velocity.x + item.newimg.width > window.innerWidth || 
-  item.position.x + item.velocity.x < 0){ item.velocity.x = -item.velocity.x;
+  item.position.x + item.velocity.x < 0){ 
+    item.velocity.x = -item.velocity.x;
+    
   }
    if (item.position.y + item.velocity.y + item.newimg.height > window.innerHeight || 
   item.position.y + item.velocity.y < 0){ item.velocity.y = -item.velocity.y;
+    //newimg.src = './images/PacMan1.png';
   }
 }
 
